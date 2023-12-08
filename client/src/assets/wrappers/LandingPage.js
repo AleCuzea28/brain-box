@@ -1,6 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.section`
+  .logo {
+    height: 3rem;
+  }
   nav {
     width: var(--fluid-width);
     max-width: var(--max-width);

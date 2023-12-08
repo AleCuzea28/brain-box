@@ -1,9 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.section`
   min-height: 100vh;
   display: grid;
   align-items: center;
+  .main2 {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.38rem;
+    height: 10rem;
+  }
   .logo {
     display: block;
     margin: 0 auto;
