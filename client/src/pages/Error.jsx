@@ -5,7 +5,7 @@ const Error = () => {
   console.log(error);
   return (
     <div>
-      <h1>Error</h1>
+      <h1>{error}</h1>
       <Link to="./dashboard"> back home</Link>
     </div>
   );
