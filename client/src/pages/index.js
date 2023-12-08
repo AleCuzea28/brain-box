@@ -6,3 +6,7 @@ export { default as Login } from "./Login";
 export { default as Error } from "./Error";
 export { default as Profile } from "./Profile";
 export { default as Admin } from "./Admin";
+export { default as AddQuestion } from "./AddQuestion";
+export { default as DeleteQuestion } from "./DeleteQuestion";
+export { default as StartQuiz } from "./StartQuiz";
+export { default as Stats } from "./Stats";
