@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import Wrapper from "../assets/wrappers/Dashboard";
 import { SmallSidebar, BigSidebar, Navbar } from "../components";
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
-const DasboardContext = createContext();
+const DashboardContext = createContext();
 
 const DashboardLayout = () => {
   //temp
@@ -24,7 +24,7 @@ const DashboardLayout = () => {
   };
 
   return (
-    <DasboardContext.Provider
+    <DashboardContext.Provider
       value={{
         user,
         showSidebar,
@@ -46,7 +46,7 @@ const DashboardLayout = () => {
           </div>
         </main>
       </Wrapper>
-    </DasboardContext.Provider>
+    </DashboardContext.Provider>
   );
 };
 export const useDashboardContext = () => useContext(DashboardContext);
