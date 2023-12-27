@@ -7,6 +7,11 @@ import {
   Login,
   DashboardLayout,
   Error,
+  AddQuestion,
+  StartQuiz,
+  Profile,
+  Stats,
+  Admin,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -20,16 +25,40 @@ const router = createBrowserRouter([
         element: <Landing />,
       },
       {
-        path: "/register",
+        path: "register",
         element: <Register />,
       },
       {
-        path: "/login",
+        path: "login",
         element: <Login />,
       },
       {
-        path: "/dashboard",
+        path: "dashboard",
         element: <DashboardLayout />,
+        children: [
+          {
+            index: true,
+            element: <StartQuiz />,
+          },
+          {
+            path: "stats",
+            element: <Stats />,
+          },
+          {
+            path: "add-question",
+            element: <AddQuestion />,
+          },
+          ,
+          {
+            path: "profile",
+            element: <Stats />,
+          },
+          ,
+          {
+            path: "admin",
+            element: <Admin />,
+          },
+        ],
       },
     ],
   },
