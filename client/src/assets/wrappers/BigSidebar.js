@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.aside`
   display: none;
@@ -56,6 +56,12 @@ const Wrapper = styled.aside`
     }
     .pending {
       background: var(--background-color);
+    }
+    .main2 {
+      display: block;
+      margin: 0 auto;
+      padding-top: 0.5rem;
+      height: 6rem;
     }
   }
 `;

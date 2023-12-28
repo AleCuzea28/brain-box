@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: relative;
@@ -6,7 +6,8 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0 0.5rem;
+    gap: 0 0.6rem;
+    padding: 0.5rem;
   }
   .img {
     width: 25px;
